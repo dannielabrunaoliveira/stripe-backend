@@ -34,8 +34,8 @@ app.get('/criar-checkout', async (req, res) => {
           quantity: 1,
         },
       ],
-      success_url: 'https://seusite.com/sucesso',
-      cancel_url: 'https://seusite.com/cancelado',
+      success_url: 'https://milleniumon.com/pagamento/',
+      cancel_url: 'https://milleniumon.com/pagamento-cancelado/',
     });
 
     // 🔹 REDIRECIONA PARA PAGAMENTO
