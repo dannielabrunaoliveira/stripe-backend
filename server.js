@@ -46,7 +46,9 @@ app.get('/criar-checkout', async (req, res) => {
     res.status(500).send("Erro real: " + err.message);
   }
 });
-
+app.get('/health', (req, res) => {
+  res.status(200).send('ok');
+});
 app.listen(3000, () => {
   console.log('Servidor rodando em http://localhost:3000');
 });
